@@ -1,0 +1,77 @@
+--e:1, done 12866 steps, mean reward -1128.400, speed 191.02 f/s
+--e:2, done 12488 steps, mean reward -1209.448, speed 196.65 f/s
+--e:3, done 9970 steps, mean reward -1104.135, speed 192.69 f/s
+--e:4, done 8280 steps, mean reward -888.666, speed 195.60 f/s
+--e:5, done 12142 steps, mean reward -856.876, speed 201.55 f/s
+Best mean reward updated -888.666 -> -856.876, model saved
+--e:6, done 7623 steps, mean reward -793.263, speed 193.70 f/s
+Best mean reward updated -856.876 -> -793.263, model saved
+--e:7, done 16226 steps, mean reward -769.259, speed 199.99 f/s
+Best mean reward updated -793.263 -> -769.259, model saved
+--e:8, done 8732 steps, mean reward -733.268, speed 199.87 f/s
+Best mean reward updated -769.259 -> -733.268, model saved
+--e:9, done 4383 steps, mean reward -684.573, speed 197.04 f/s
+Best mean reward updated -733.268 -> -684.573, model saved
+--e:10, done 5891 steps, mean reward -645.233, speed 187.99 f/s
+Best mean reward updated -684.573 -> -645.233, model saved
+--e:11, done 5666 steps, mean reward -581.914, speed 185.55 f/s
+Best mean reward updated -645.233 -> -581.914, model saved
+--e:12, done 10465 steps, mean reward -480.605, speed 200.24 f/s
+Best mean reward updated -581.914 -> -480.605, model saved
+--e:13, done 5998 steps, mean reward -420.133, speed 195.08 f/s
+Best mean reward updated -480.605 -> -420.133, model saved
+--e:14, done 6833 steps, mean reward -434.760, speed 159.83 f/s
+--e:15, done 12089 steps, mean reward -395.237, speed 197.39 f/s
+Best mean reward updated -420.133 -> -395.237, model saved
+--e:16, done 3936 steps, mean reward -366.914, speed 189.97 f/s
+Best mean reward updated -395.237 -> -366.914, model saved
+--e:17, done 17021 steps, mean reward -320.922, speed 197.10 f/s
+Best mean reward updated -366.914 -> -320.922, model saved
+--e:18, done 4753 steps, mean reward -287.057, speed 195.09 f/s
+Best mean reward updated -320.922 -> -287.057, model saved
+--e:19, done 10154 steps, mean reward -241.925, speed 201.11 f/s
+Best mean reward updated -287.057 -> -241.925, model saved
+--e:20, done 12165 steps, mean reward -222.281, speed 202.66 f/s
+Best mean reward updated -241.925 -> -222.281, model saved
+--e:21, done 6634 steps, mean reward -145.256, speed 200.28 f/s
+Best mean reward updated -222.281 -> -145.256, model saved
+--e:22, done 6978 steps, mean reward -130.515, speed 200.34 f/s
+Best mean reward updated -145.256 -> -130.515, model saved
+--e:23, done 9752 steps, mean reward -55.052, speed 211.63 f/s
+Best mean reward updated -130.515 -> -55.052, model saved
+--e:24, done 8216 steps, mean reward 9.331, speed 209.10 f/s
+Best mean reward updated -55.052 -> 9.331, model saved
+--e:25, done 3703 steps, mean reward 31.865, speed 207.38 f/s
+Best mean reward updated 9.331 -> 31.865, model saved
+--e:26, done 8709 steps, mean reward 86.051, speed 194.91 f/s
+Best mean reward updated 31.865 -> 86.051, model saved
+--e:27, done 7933 steps, mean reward 111.236, speed 199.04 f/s
+Best mean reward updated 86.051 -> 111.236, model saved
+--e:28, done 16599 steps, mean reward 147.167, speed 202.26 f/s
+Best mean reward updated 111.236 -> 147.167, model saved
+--e:29, done 3892 steps, mean reward 117.647, speed 197.83 f/s
+--e:30, done 5015 steps, mean reward 116.916, speed 199.20 f/s
+--e:31, done 12881 steps, mean reward 70.332, speed 203.32 f/s
+--e:32, done 16572 steps, mean reward 42.796, speed 205.16 f/s
+--e:33, done 4453 steps, mean reward -2.517, speed 198.87 f/s
+--e:34, done 11193 steps, mean reward -60.872, speed 203.01 f/s
+--e:35, done 12498 steps, mean reward -64.826, speed 203.74 f/s
+--e:36, done 10578 steps, mean reward -86.891, speed 198.30 f/s
+--e:37, done 16127 steps, mean reward -85.519, speed 197.48 f/s
+--e:38, done 10389 steps, mean reward -64.469, speed 192.78 f/s
+--e:39, done 12873 steps, mean reward -71.389, speed 190.96 f/s
+--e:40, done 9989 steps, mean reward 15.631, speed 193.27 f/s
+--e:41, done 14473 steps, mean reward 29.605, speed 192.73 f/s
+--e:42, done 16992 steps, mean reward 96.229, speed 195.42 f/s
+--e:43, done 16380 steps, mean reward 94.137, speed 194.45 f/s
+--e:44, done 13467 steps, mean reward 117.039, speed 196.66 f/s
+--e:45, done 6195 steps, mean reward 151.604, speed 202.55 f/s
+Best mean reward updated 147.167 -> 151.604, model saved
+--e:46, done 9307 steps, mean reward 178.187, speed 207.14 f/s
+Best mean reward updated 151.604 -> 178.187, model saved
+--e:47, done 10330 steps, mean reward 245.896, speed 199.84 f/s
+Best mean reward updated 178.187 -> 245.896, model saved
+--e:48, done 16072 steps, mean reward 209.673, speed 201.80 f/s
+--e:49, done 6077 steps, mean reward 249.439, speed 198.75 f/s
+Best mean reward updated 245.896 -> 249.439, model saved
+--e:50, done 15345 steps, mean reward 184.432, speed 210.36 f/s

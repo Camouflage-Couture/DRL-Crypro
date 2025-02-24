@@ -1,0 +1,3 @@
+--e:1, done 12866 steps, mean reward -1265.100, speed 40.74 f/s
+--e:2, done 12488 steps, mean reward -1138.101, speed 41.55 f/s
+--e:3, done 9970 steps, mean reward -1016.705, speed 46.84 f/s

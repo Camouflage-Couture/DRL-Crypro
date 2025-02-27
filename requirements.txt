@@ -1,0 +1,10 @@
+torch
+torchvision
+binance-python 
+gym
+numpy
+pandas
+matplotlib
+schedule
+opencv-python
+dotenv

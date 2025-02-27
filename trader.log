@@ -1,0 +1,617 @@
+2025-02-26 12:46:35,904 - INFO - Initializing trader with model: weights/bitcoin-ppo-True(m-raw)_agent0_best.pth
+2025-02-26 12:46:35,905 - INFO - Loading PPO model...
+2025-02-26 12:46:36,051 - INFO - Model loaded successfully
+2025-02-26 12:46:36,054 - INFO - Model loaded successfully. Using device: cpu
+2025-02-26 12:46:36,070 - ERROR - Error loading profit history: Expecting value: line 5 column 17 (char 81)
+2025-02-26 12:46:36,076 - ERROR - Traceback (most recent call last):
+  File ".\code\live_r.py", line 170, in __init__
+    data = json.load(f)
+  File "C:\Users\aymen\miniconda3\envs\lol\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\aymen\miniconda3\envs\lol\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aymen\miniconda3\envs\lol\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aymen\miniconda3\envs\lol\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 17 (char 81)
+
+2025-02-26 12:46:36,080 - INFO - Using position from profit tracker: 0
+2025-02-26 12:46:36,101 - INFO - Loaded 1 historical trades
+2025-02-26 12:46:36,101 - INFO - Last trade: LONG at $87315.99
+2025-02-26 12:46:36,102 - INFO - Initializing Binance data downloader...
+2025-02-26 12:46:36,460 - INFO - Connected to Binance API successfully
+2025-02-26 12:46:36,461 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 12:46:36,461 - INFO - Time range: 2025-02-25 12:46:36.461618 to 2025-02-26 12:46:36.461618
+2025-02-26 12:46:36,462 - INFO - Downloading 15m data...
+2025-02-26 12:46:37,054 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 12:46:37,054 - INFO - Downloading 30m data...
+2025-02-26 12:46:37,571 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 12:46:37,572 - INFO - Downloading 2h data...
+2025-02-26 12:46:38,087 - INFO - Downloaded 11 2h candles for BTCUSDT
+2025-02-26 12:46:38,087 - INFO - Predicting action...
+2025-02-26 12:46:38,088 - INFO - Extracting features from market data...
+2025-02-26 12:46:38,131 - INFO - Feature extraction completed. First few values: tensor([9.9913e-01, 8.8687e+04, 8.8788e+04, 2.5436e-03, 5.0000e-01])
+2025-02-26 12:46:38,132 - INFO - Position feature: 0.0, Fund rate feature: 0.0
+2025-02-26 12:46:38,133 - INFO - Current position: 0, Legal actions: [0, 1, 2]
+2025-02-26 12:46:38,157 - INFO - Action IDLE probability: 0.0000
+2025-02-26 12:46:38,158 - INFO - Action LONG probability: 1.0000
+2025-02-26 12:46:38,158 - INFO - Action SHORT probability: 0.0000
+2025-02-26 12:46:38,158 - ERROR - Error in inference cycle: name 'old_position' is not defined
+2025-02-26 12:46:38,159 - ERROR - Traceback (most recent call last):
+  File ".\code\live_r.py", line 770, in run_inference
+    action_name, action = trader.predict_action(current_data)
+  File ".\code\live_r.py", line 698, in predict_action
+    self._update_position(action)
+  File ".\code\live_r.py", line 713, in _update_position
+    logger.info(f"Position updated from {old_position} to {self.position}")
+NameError: name 'old_position' is not defined
+
+2025-02-26 12:48:17,369 - INFO - Initializing trader with model: weights/bitcoin-ppo-True(m-raw)_agent0_best.pth
+2025-02-26 12:48:17,371 - INFO - Loading PPO model...
+2025-02-26 12:48:17,482 - INFO - Model loaded successfully
+2025-02-26 12:48:17,483 - INFO - Model loaded successfully. Using device: cpu
+2025-02-26 12:48:17,484 - ERROR - Error loading profit history: Expecting value: line 5 column 17 (char 81)
+2025-02-26 12:48:17,487 - ERROR - Traceback (most recent call last):
+  File ".\code\live_r.py", line 170, in __init__
+    data = json.load(f)
+  File "C:\Users\aymen\miniconda3\envs\lol\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\aymen\miniconda3\envs\lol\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aymen\miniconda3\envs\lol\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aymen\miniconda3\envs\lol\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 17 (char 81)
+
+2025-02-26 12:48:17,489 - INFO - Using position from profit tracker: 0
+2025-02-26 12:48:17,503 - INFO - Loaded 1 historical trades
+2025-02-26 12:48:17,503 - INFO - Last trade: LONG at $87315.99
+2025-02-26 12:48:17,504 - INFO - Initializing Binance data downloader...
+2025-02-26 12:48:17,909 - INFO - Connected to Binance API successfully
+2025-02-26 12:48:17,910 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 12:48:17,910 - INFO - Time range: 2025-02-25 12:48:17.910854 to 2025-02-26 12:48:17.910854
+2025-02-26 12:48:17,910 - INFO - Downloading 15m data...
+2025-02-26 12:48:18,492 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 12:48:18,493 - INFO - Downloading 30m data...
+2025-02-26 12:48:19,009 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 12:48:19,010 - INFO - Downloading 2h data...
+2025-02-26 12:48:19,525 - INFO - Downloaded 11 2h candles for BTCUSDT
+2025-02-26 12:48:19,526 - INFO - Predicting action...
+2025-02-26 12:48:19,527 - INFO - Extracting features from market data...
+2025-02-26 12:48:19,571 - INFO - Feature extraction completed. First few values: tensor([9.9988e-01, 8.8753e+04, 8.8788e+04, 2.5436e-03, 5.0000e-01])
+2025-02-26 12:48:19,572 - INFO - Position feature: 0.0, Fund rate feature: 0.0
+2025-02-26 12:48:19,573 - INFO - Current position: 0, Legal actions: [0, 1, 2]
+2025-02-26 12:48:19,599 - INFO - Action IDLE probability: 0.0000
+2025-02-26 12:48:19,599 - INFO - Action LONG probability: 1.0000
+2025-02-26 12:48:19,600 - INFO - Action SHORT probability: 0.0000
+2025-02-26 12:48:19,600 - INFO - Position updated from 0 to 1
+2025-02-26 12:48:19,600 - INFO - Predicted action: LONG
+2025-02-26 12:48:19,613 - INFO - Trade history saved successfully with 2 trades
+2025-02-26 12:48:19,613 - INFO - Starting update - Current position: 0, Action: 1, Price: $88753.23
+2025-02-26 12:48:19,616 - INFO - Pre-update stats - Balance: $10000.00, Value: $10000.00
+2025-02-26 12:48:19,616 - INFO - OPENED LONG: 0.10698483874896722 units at $88753.23
+2025-02-26 12:48:19,616 - INFO - Commission paid: $4.75
+2025-02-26 12:48:19,616 - INFO - Post-update stats - Balance: $500.00, Value: $9995.25
+2025-02-26 12:48:19,617 - INFO - Total P&L: $-4.75 (-0.05%)
+2025-02-26 12:48:19,617 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 12:48:19,619 - INFO - Profit log saved successfully with 1 entries
+2025-02-26 12:48:19,619 - INFO - Position changed from 0 to 1
+2025-02-26 12:48:19,619 - INFO - PnL: $0.00 | Total: $-4.75 (-0.05%)
+2025-02-26 12:48:19,620 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 12:48:19,620 - INFO - Total P&L: $-4.75 (-0.05%)
+2025-02-26 12:48:19,620 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9995.25
+Total P&L: $-4.75 (-0.05%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 13:03:18,322 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 13:03:18,349 - INFO - Time range: 2025-02-25 13:03:18.347263 to 2025-02-26 13:03:18.347263
+2025-02-26 13:03:18,350 - INFO - Downloading 15m data...
+2025-02-26 13:03:19,306 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 13:03:19,307 - INFO - Downloading 30m data...
+2025-02-26 13:03:19,835 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 13:03:19,835 - INFO - Downloading 2h data...
+2025-02-26 13:03:20,348 - INFO - Downloaded 12 2h candles for BTCUSDT
+2025-02-26 13:03:20,349 - INFO - Predicting action...
+2025-02-26 13:03:20,350 - INFO - Extracting features from market data...
+2025-02-26 13:03:20,450 - INFO - Feature extraction completed. First few values: tensor([9.9892e-01, 8.8521e+04, 8.8674e+04, 2.6092e-03, 5.4167e-01])
+2025-02-26 13:03:20,451 - INFO - Position feature: 1.0, Fund rate feature: 0.0
+2025-02-26 13:03:20,453 - INFO - Current position: 1, Legal actions: [0, 3]
+2025-02-26 13:03:20,495 - INFO - Action IDLE probability: 1.0000
+2025-02-26 13:03:20,495 - INFO - Action CLOSE probability: 0.0000
+2025-02-26 13:03:20,496 - INFO - Position updated from 1 to 0
+2025-02-26 13:03:20,496 - INFO - Predicted action: IDLE
+2025-02-26 13:03:20,513 - INFO - Trade history saved successfully with 3 trades
+2025-02-26 13:03:20,514 - INFO - Starting update - Current position: 1, Action: 0, Price: $88520.89
+2025-02-26 13:03:20,515 - INFO - Pre-update stats - Balance: $500.00, Value: $475.14
+2025-02-26 13:03:20,515 - INFO - Action IDLE - No position change
+2025-02-26 13:03:20,515 - INFO - Post-update stats - Balance: $500.00, Value: $9970.39
+2025-02-26 13:03:20,515 - INFO - Total P&L: $-29.61 (-0.30%)
+2025-02-26 13:03:20,518 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 13:03:20,522 - INFO - Profit log saved successfully with 2 entries
+2025-02-26 13:03:20,523 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 13:03:20,523 - INFO - Total P&L: $-29.61 (-0.30%)
+2025-02-26 13:03:20,524 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9970.39
+Total P&L: $-29.61 (-0.30%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 13:18:21,139 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 13:18:21,155 - INFO - Time range: 2025-02-25 13:18:21.155938 to 2025-02-26 13:18:21.155938
+2025-02-26 13:18:21,157 - INFO - Downloading 15m data...
+2025-02-26 13:18:21,876 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 13:18:21,876 - INFO - Downloading 30m data...
+2025-02-26 13:18:22,392 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 13:18:22,392 - INFO - Downloading 2h data...
+2025-02-26 13:18:22,899 - INFO - Downloaded 12 2h candles for BTCUSDT
+2025-02-26 13:18:22,899 - INFO - Predicting action...
+2025-02-26 13:18:22,899 - INFO - Extracting features from market data...
+2025-02-26 13:18:22,920 - INFO - Feature extraction completed. First few values: tensor([9.9848e-01, 8.8301e+04, 8.8436e+04, 2.9240e-03, 5.4167e-01])
+2025-02-26 13:18:22,921 - INFO - Position feature: 0.0, Fund rate feature: 0.0
+2025-02-26 13:18:22,922 - INFO - Current position: 0, Legal actions: [0, 1, 2]
+2025-02-26 13:18:22,932 - INFO - Action IDLE probability: 0.0000
+2025-02-26 13:18:22,932 - INFO - Action LONG probability: 1.0000
+2025-02-26 13:18:22,933 - INFO - Action SHORT probability: 0.0000
+2025-02-26 13:18:22,933 - INFO - Position updated from 0 to 1
+2025-02-26 13:18:22,934 - INFO - Predicted action: LONG
+2025-02-26 13:18:22,941 - INFO - Trade history saved successfully with 4 trades
+2025-02-26 13:18:22,943 - INFO - Starting update - Current position: 1, Action: 1, Price: $88301.30
+2025-02-26 13:18:22,943 - INFO - Pre-update stats - Balance: $500.00, Value: $451.65
+2025-02-26 13:18:22,944 - INFO - Post-update stats - Balance: $500.00, Value: $9946.90
+2025-02-26 13:18:22,944 - INFO - Total P&L: $-53.10 (-0.53%)
+2025-02-26 13:18:22,947 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 13:18:22,951 - INFO - Profit log saved successfully with 3 entries
+2025-02-26 13:18:22,951 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 13:18:22,951 - INFO - Total P&L: $-53.10 (-0.53%)
+2025-02-26 13:18:22,952 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9946.90
+Total P&L: $-53.10 (-0.53%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 13:30:41,640 - INFO - Initializing trader with model: weights/bitcoin-ppo-True(m-raw)_agent0_best.pth
+2025-02-26 13:30:41,641 - INFO - Loading PPO model...
+2025-02-26 13:30:41,746 - INFO - Model loaded successfully
+2025-02-26 13:30:41,747 - INFO - Model loaded successfully. Using device: cpu
+2025-02-26 13:30:41,748 - INFO - Loaded profit history: 3 entries
+2025-02-26 13:30:41,748 - INFO - Current balance: $500.00
+2025-02-26 13:30:41,748 - INFO - Current portfolio value: $9946.90
+2025-02-26 13:30:41,748 - INFO - Current position: 1
+2025-02-26 13:30:41,748 - INFO - Entry price: $88753.23
+2025-02-26 13:30:41,748 - INFO - Position size: 0.106985
+2025-02-26 13:30:41,748 - INFO - Using position from profit tracker: 1
+2025-02-26 13:30:41,793 - INFO - Loaded 4 historical trades
+2025-02-26 13:30:41,793 - INFO - Last trade: LONG at $88301.30
+2025-02-26 13:30:41,794 - INFO - Initializing Binance data downloader...
+2025-02-26 13:30:42,105 - INFO - Connected to Binance API successfully
+2025-02-26 13:30:42,106 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 13:30:42,106 - INFO - Time range: 2025-02-25 13:30:42.106369 to 2025-02-26 13:30:42.106369
+2025-02-26 13:30:42,106 - INFO - Downloading 15m data...
+2025-02-26 13:30:42,695 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 13:30:42,696 - INFO - Downloading 30m data...
+2025-02-26 13:30:43,210 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 13:30:43,211 - INFO - Downloading 2h data...
+2025-02-26 13:30:43,736 - INFO - Downloaded 12 2h candles for BTCUSDT
+2025-02-26 13:30:43,737 - INFO - Predicting action...
+2025-02-26 13:30:43,737 - INFO - Extracting features from market data...
+2025-02-26 13:30:43,788 - INFO - Feature extraction completed. First few values: tensor([1.0001e+00, 8.8342e+04, 8.8345e+04, 2.4986e-03, 5.4167e-01])
+2025-02-26 13:30:43,789 - INFO - Position feature: 1.0, Fund rate feature: 0.0
+2025-02-26 13:30:43,790 - INFO - Current position: 1, Legal actions: [0, 3]
+2025-02-26 13:30:43,819 - INFO - Action IDLE probability: 1.0000
+2025-02-26 13:30:43,819 - INFO - Action CLOSE probability: 0.0000
+2025-02-26 13:30:43,820 - INFO - Position updated from 1 to 0
+2025-02-26 13:30:43,820 - INFO - Predicted action: IDLE
+2025-02-26 13:30:43,828 - INFO - Trade history saved successfully with 5 trades
+2025-02-26 13:30:43,829 - INFO - Starting update - Current position: 1, Action: 0, Price: $88341.69
+2025-02-26 13:30:43,829 - INFO - Pre-update stats - Balance: $500.00, Value: $9951.22
+2025-02-26 13:30:43,830 - INFO - Action IDLE - Updated valuation
+2025-02-26 13:30:43,830 - INFO - Post-update stats - Balance: $500.00, Value: $9951.22
+2025-02-26 13:30:43,830 - INFO - Total P&L: $-48.78 (-0.49%)
+2025-02-26 13:30:43,832 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 13:30:43,834 - INFO - Profit log saved successfully with 4 entries
+2025-02-26 13:30:43,835 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 13:30:43,836 - INFO - Total P&L: $-48.78 (-0.49%)
+2025-02-26 13:30:43,836 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9951.22
+Total P&L: $-48.78 (-0.49%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 13:33:23,357 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 13:33:23,384 - INFO - Time range: 2025-02-25 13:33:23.382953 to 2025-02-26 13:33:23.382953
+2025-02-26 13:33:23,385 - INFO - Downloading 15m data...
+2025-02-26 13:33:24,231 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 13:33:24,232 - INFO - Downloading 30m data...
+2025-02-26 13:33:24,750 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 13:33:24,751 - INFO - Downloading 2h data...
+2025-02-26 13:33:25,276 - INFO - Downloaded 12 2h candles for BTCUSDT
+2025-02-26 13:33:25,277 - INFO - Predicting action...
+2025-02-26 13:33:25,277 - INFO - Extracting features from market data...
+2025-02-26 13:33:25,349 - INFO - Feature extraction completed. First few values: tensor([1.0005e+00, 8.8375e+04, 8.8427e+04, 2.6864e-03, 5.4167e-01])
+2025-02-26 13:33:25,350 - INFO - Position feature: 1.0, Fund rate feature: 0.0
+2025-02-26 13:33:25,351 - INFO - Current position: 1, Legal actions: [0, 3]
+2025-02-26 13:33:25,390 - INFO - Action IDLE probability: 1.0000
+2025-02-26 13:33:25,390 - INFO - Action CLOSE probability: 0.0000
+2025-02-26 13:33:25,391 - INFO - Position updated from 1 to 0
+2025-02-26 13:33:25,391 - INFO - Predicted action: IDLE
+2025-02-26 13:33:25,400 - INFO - Trade history saved successfully with 5 trades
+2025-02-26 13:33:25,401 - INFO - Starting update - Current position: 1, Action: 0, Price: $88374.55
+2025-02-26 13:33:25,402 - INFO - Pre-update stats - Balance: $500.00, Value: $459.49
+2025-02-26 13:33:25,402 - INFO - Action IDLE - No position change
+2025-02-26 13:33:25,403 - INFO - Post-update stats - Balance: $500.00, Value: $9954.74
+2025-02-26 13:33:25,403 - INFO - Total P&L: $-45.26 (-0.45%)
+2025-02-26 13:33:25,405 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 13:33:25,407 - INFO - Profit log saved successfully with 4 entries
+2025-02-26 13:33:25,407 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 13:33:25,407 - INFO - Total P&L: $-45.26 (-0.45%)
+2025-02-26 13:33:25,408 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9954.74
+Total P&L: $-45.26 (-0.45%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 13:45:42,931 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 13:45:42,989 - INFO - Time range: 2025-02-25 13:45:42.986946 to 2025-02-26 13:45:42.986946
+2025-02-26 13:45:42,990 - INFO - Downloading 15m data...
+2025-02-26 13:45:43,993 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 13:45:43,994 - INFO - Downloading 30m data...
+2025-02-26 13:45:44,519 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 13:45:44,520 - INFO - Downloading 2h data...
+2025-02-26 13:45:45,039 - INFO - Downloaded 12 2h candles for BTCUSDT
+2025-02-26 13:45:45,040 - INFO - Predicting action...
+2025-02-26 13:45:45,041 - INFO - Extracting features from market data...
+2025-02-26 13:45:45,165 - INFO - Feature extraction completed. First few values: tensor([9.9908e-01, 8.8168e+04, 8.8249e+04, 2.4667e-03, 5.4167e-01])
+2025-02-26 13:45:45,166 - INFO - Position feature: 0.0, Fund rate feature: 0.0
+2025-02-26 13:45:45,169 - INFO - Current position: 0, Legal actions: [0, 1, 2]
+2025-02-26 13:45:45,233 - INFO - Action IDLE probability: 0.0000
+2025-02-26 13:45:45,234 - INFO - Action LONG probability: 1.0000
+2025-02-26 13:45:45,235 - INFO - Action SHORT probability: 0.0000
+2025-02-26 13:45:45,236 - INFO - Position updated from 0 to 1
+2025-02-26 13:45:45,236 - INFO - Predicted action: LONG
+2025-02-26 13:45:45,266 - INFO - Trade history saved successfully with 6 trades
+2025-02-26 13:45:45,270 - INFO - Starting update - Current position: 1, Action: 1, Price: $88168.05
+2025-02-26 13:45:45,271 - INFO - Pre-update stats - Balance: $500.00, Value: $9932.64
+2025-02-26 13:45:45,272 - INFO - Post-update stats - Balance: $500.00, Value: $9932.64
+2025-02-26 13:45:45,273 - INFO - Total P&L: $-67.36 (-0.67%)
+2025-02-26 13:45:45,278 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 13:45:45,282 - INFO - Profit log saved successfully with 5 entries
+2025-02-26 13:45:45,282 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 13:45:45,283 - INFO - Total P&L: $-67.36 (-0.67%)
+2025-02-26 13:45:45,284 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9932.64
+Total P&L: $-67.36 (-0.67%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 13:48:25,474 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 13:48:25,501 - INFO - Time range: 2025-02-25 13:48:25.499597 to 2025-02-26 13:48:25.499597
+2025-02-26 13:48:25,501 - INFO - Downloading 15m data...
+2025-02-26 13:48:26,655 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 13:48:26,657 - INFO - Downloading 30m data...
+2025-02-26 13:48:27,179 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 13:48:27,180 - INFO - Downloading 2h data...
+2025-02-26 13:48:27,697 - INFO - Downloaded 12 2h candles for BTCUSDT
+2025-02-26 13:48:27,699 - INFO - Predicting action...
+2025-02-26 13:48:27,699 - INFO - Extracting features from market data...
+2025-02-26 13:48:27,760 - INFO - Feature extraction completed. First few values: tensor([9.9927e-01, 8.8184e+04, 8.8249e+04, 2.5767e-03, 5.4167e-01])
+2025-02-26 13:48:27,762 - INFO - Position feature: 0.0, Fund rate feature: 0.0
+2025-02-26 13:48:27,766 - INFO - Current position: 0, Legal actions: [0, 1, 2]
+2025-02-26 13:48:27,802 - INFO - Action IDLE probability: 0.0000
+2025-02-26 13:48:27,803 - INFO - Action LONG probability: 1.0000
+2025-02-26 13:48:27,803 - INFO - Action SHORT probability: 0.0000
+2025-02-26 13:48:27,803 - INFO - Position updated from 0 to 1
+2025-02-26 13:48:27,804 - INFO - Predicted action: LONG
+2025-02-26 13:48:27,824 - INFO - Trade history saved successfully with 6 trades
+2025-02-26 13:48:27,825 - INFO - Starting update - Current position: 1, Action: 1, Price: $88184.42
+2025-02-26 13:48:27,826 - INFO - Pre-update stats - Balance: $500.00, Value: $439.15
+2025-02-26 13:48:27,827 - INFO - Post-update stats - Balance: $500.00, Value: $9934.40
+2025-02-26 13:48:27,828 - INFO - Total P&L: $-65.60 (-0.66%)
+2025-02-26 13:48:27,836 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 13:48:27,842 - INFO - Profit log saved successfully with 5 entries
+2025-02-26 13:48:27,843 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 13:48:27,844 - INFO - Total P&L: $-65.60 (-0.66%)
+2025-02-26 13:48:27,845 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9934.40
+Total P&L: $-65.60 (-0.66%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 14:00:46,227 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 14:00:46,295 - INFO - Time range: 2025-02-25 14:00:46.291823 to 2025-02-26 14:00:46.291823
+2025-02-26 14:00:46,295 - INFO - Downloading 15m data...
+2025-02-26 14:00:47,005 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 14:00:47,006 - INFO - Downloading 30m data...
+2025-02-26 14:00:47,533 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 14:00:47,535 - INFO - Downloading 2h data...
+2025-02-26 14:00:48,054 - INFO - Downloaded 11 2h candles for BTCUSDT
+2025-02-26 14:00:48,055 - INFO - Predicting action...
+2025-02-26 14:00:48,055 - INFO - Extracting features from market data...
+2025-02-26 14:00:48,152 - INFO - Feature extraction completed. First few values: tensor([1.0010e+00, 8.8029e+04, 8.8091e+04, 3.5325e-03, 5.8333e-01])
+2025-02-26 14:00:48,153 - INFO - Position feature: 1.0, Fund rate feature: 0.0
+2025-02-26 14:00:48,155 - INFO - Current position: 1, Legal actions: [0, 3]
+2025-02-26 14:00:48,195 - INFO - Action IDLE probability: 1.0000
+2025-02-26 14:00:48,196 - INFO - Action CLOSE probability: 0.0000
+2025-02-26 14:00:48,196 - INFO - Position updated from 1 to 0
+2025-02-26 14:00:48,196 - INFO - Predicted action: IDLE
+2025-02-26 14:00:48,220 - INFO - Trade history saved successfully with 7 trades
+2025-02-26 14:00:48,223 - INFO - Starting update - Current position: 1, Action: 0, Price: $88028.99
+2025-02-26 14:00:48,223 - INFO - Pre-update stats - Balance: $500.00, Value: $9917.77
+2025-02-26 14:00:48,224 - INFO - Action IDLE - Updated valuation
+2025-02-26 14:00:48,225 - INFO - Post-update stats - Balance: $500.00, Value: $9917.77
+2025-02-26 14:00:48,225 - INFO - Total P&L: $-82.23 (-0.82%)
+2025-02-26 14:00:48,230 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 14:00:48,234 - INFO - Profit log saved successfully with 6 entries
+2025-02-26 14:00:48,235 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 14:00:48,236 - INFO - Total P&L: $-82.23 (-0.82%)
+2025-02-26 14:00:48,236 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9917.77
+Total P&L: $-82.23 (-0.82%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 14:03:28,713 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 14:03:28,755 - INFO - Time range: 2025-02-25 14:03:28.751987 to 2025-02-26 14:03:28.751987
+2025-02-26 14:03:28,756 - INFO - Downloading 15m data...
+2025-02-26 14:03:29,676 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 14:03:29,677 - INFO - Downloading 30m data...
+2025-02-26 14:03:30,222 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 14:03:30,223 - INFO - Downloading 2h data...
+2025-02-26 14:03:30,736 - INFO - Downloaded 11 2h candles for BTCUSDT
+2025-02-26 14:03:30,737 - INFO - Predicting action...
+2025-02-26 14:03:30,738 - INFO - Extracting features from market data...
+2025-02-26 14:03:30,815 - INFO - Feature extraction completed. First few values: tensor([9.9923e-01, 8.7871e+04, 8.8091e+04, 3.7344e-03, 5.8333e-01])
+2025-02-26 14:03:30,815 - INFO - Position feature: 1.0, Fund rate feature: 0.0
+2025-02-26 14:03:30,817 - INFO - Current position: 1, Legal actions: [0, 3]
+2025-02-26 14:03:30,847 - INFO - Action IDLE probability: 1.0000
+2025-02-26 14:03:30,847 - INFO - Action CLOSE probability: 0.0000
+2025-02-26 14:03:30,848 - INFO - Position updated from 1 to 0
+2025-02-26 14:03:30,848 - INFO - Predicted action: IDLE
+2025-02-26 14:03:30,856 - INFO - Trade history saved successfully with 7 trades
+2025-02-26 14:03:30,858 - INFO - Starting update - Current position: 1, Action: 0, Price: $87871.33
+2025-02-26 14:03:30,858 - INFO - Pre-update stats - Balance: $500.00, Value: $405.65
+2025-02-26 14:03:30,859 - INFO - Action IDLE - No position change
+2025-02-26 14:03:30,859 - INFO - Post-update stats - Balance: $500.00, Value: $9900.90
+2025-02-26 14:03:30,860 - INFO - Total P&L: $-99.10 (-0.99%)
+2025-02-26 14:03:30,861 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 14:03:30,863 - INFO - Profit log saved successfully with 6 entries
+2025-02-26 14:03:30,864 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 14:03:30,864 - INFO - Total P&L: $-99.10 (-0.99%)
+2025-02-26 14:03:30,865 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9900.90
+Total P&L: $-99.10 (-0.99%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 14:15:48,920 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 14:15:48,958 - INFO - Time range: 2025-02-25 14:15:48.956696 to 2025-02-26 14:15:48.956696
+2025-02-26 14:15:48,959 - INFO - Downloading 15m data...
+2025-02-26 14:15:49,811 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 14:15:49,812 - INFO - Downloading 30m data...
+2025-02-26 14:15:50,325 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 14:15:50,325 - INFO - Downloading 2h data...
+2025-02-26 14:15:50,863 - INFO - Downloaded 11 2h candles for BTCUSDT
+2025-02-26 14:15:50,865 - INFO - Predicting action...
+2025-02-26 14:15:50,865 - INFO - Extracting features from market data...
+2025-02-26 14:15:51,618 - INFO - Feature extraction completed. First few values: tensor([9.9979e-01, 8.7710e+04, 8.7750e+04, 3.4881e-03, 5.8333e-01])
+2025-02-26 14:15:51,619 - INFO - Position feature: 0.0, Fund rate feature: 0.0
+2025-02-26 14:15:51,621 - INFO - Current position: 0, Legal actions: [0, 1, 2]
+2025-02-26 14:15:51,654 - INFO - Action IDLE probability: 0.0000
+2025-02-26 14:15:51,655 - INFO - Action LONG probability: 1.0000
+2025-02-26 14:15:51,656 - INFO - Action SHORT probability: 0.0000
+2025-02-26 14:15:51,656 - INFO - Position updated from 0 to 1
+2025-02-26 14:15:51,656 - INFO - Predicted action: LONG
+2025-02-26 14:15:51,666 - INFO - Trade history saved successfully with 8 trades
+2025-02-26 14:15:51,667 - INFO - Starting update - Current position: 1, Action: 1, Price: $87709.96
+2025-02-26 14:15:51,669 - INFO - Pre-update stats - Balance: $500.00, Value: $9883.64
+2025-02-26 14:15:51,669 - INFO - Post-update stats - Balance: $500.00, Value: $9883.64
+2025-02-26 14:15:51,670 - INFO - Total P&L: $-116.36 (-1.16%)
+2025-02-26 14:15:51,671 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 14:15:51,678 - ERROR - Error saving profit log: [Errno 28] No space left on device
+2025-02-26 14:15:51,691 - ERROR - OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ".\code\live_r.py", line 415, in _save_profit_log
+    json.dump(data, f, indent=2)
+OSError: [Errno 28] No space left on device
+
+2025-02-26 14:15:51,694 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 14:15:51,694 - INFO - Total P&L: $-116.36 (-1.16%)
+2025-02-26 14:15:51,695 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9883.64
+Total P&L: $-116.36 (-1.16%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
+2025-02-26 14:18:31,882 - INFO - Downloading 24 hours of recent data for BTCUSDT...
+2025-02-26 14:18:31,930 - INFO - Time range: 2025-02-25 14:18:31.927710 to 2025-02-26 14:18:31.927710
+2025-02-26 14:18:31,931 - INFO - Downloading 15m data...
+2025-02-26 14:18:32,634 - INFO - Downloaded 92 15m candles for BTCUSDT
+2025-02-26 14:18:32,636 - INFO - Downloading 30m data...
+2025-02-26 14:18:33,187 - INFO - Downloaded 46 30m candles for BTCUSDT
+2025-02-26 14:18:33,187 - INFO - Downloading 2h data...
+2025-02-26 14:18:33,742 - INFO - Downloaded 11 2h candles for BTCUSDT
+2025-02-26 14:18:33,744 - INFO - Predicting action...
+2025-02-26 14:18:33,744 - INFO - Extracting features from market data...
+2025-02-26 14:18:33,765 - INFO - Feature extraction completed. First few values: tensor([9.9854e-01, 8.7600e+04, 8.7750e+04, 3.8183e-03, 5.8333e-01])
+2025-02-26 14:18:33,766 - INFO - Position feature: 0.0, Fund rate feature: 0.0
+2025-02-26 14:18:33,767 - INFO - Current position: 0, Legal actions: [0, 1, 2]
+2025-02-26 14:18:33,778 - INFO - Action IDLE probability: 0.0000
+2025-02-26 14:18:33,779 - INFO - Action LONG probability: 1.0000
+2025-02-26 14:18:33,780 - INFO - Action SHORT probability: 0.0000
+2025-02-26 14:18:33,780 - INFO - Position updated from 0 to 1
+2025-02-26 14:18:33,780 - INFO - Predicted action: LONG
+2025-02-26 14:18:33,794 - INFO - Trade history saved successfully with 8 trades
+2025-02-26 14:18:33,796 - INFO - Starting update - Current position: 1, Action: 1, Price: $87599.99
+2025-02-26 14:18:33,796 - INFO - Pre-update stats - Balance: $500.00, Value: $376.62
+2025-02-26 14:18:33,799 - INFO - Post-update stats - Balance: $500.00, Value: $9871.87
+2025-02-26 14:18:33,799 - INFO - Total P&L: $-128.13 (-1.28%)
+2025-02-26 14:18:33,803 - INFO - Created backup of profit log: profit_log.json.bak
+2025-02-26 14:18:33,809 - INFO - Profit log saved successfully with 7 entries
+2025-02-26 14:18:33,810 - INFO - Generating summary - Total trades: 0, Win rate: 0.00%
+2025-02-26 14:18:33,811 - INFO - Total P&L: $-128.13 (-1.28%)
+2025-02-26 14:18:33,811 - INFO - 
+
+=== TRADING PERFORMANCE SUMMARY ===
+Initial Balance: $10000.00
+Current Balance: $500.00
+Current Portfolio Value: $9871.87
+Total P&L: $-128.13 (-1.28%)
+
+Total Trades: 0
+Profitable Trades: 0 (0.00%)
+Loss Trades: 0
+
+Current Position: Long
+Position Size: 0.106985
+Entry Price: $88753.23
+
+Largest Profit: $0.00
+Largest Loss: $0.00
+==============================
+
